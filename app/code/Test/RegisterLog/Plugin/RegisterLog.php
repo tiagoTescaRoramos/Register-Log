@@ -22,6 +22,12 @@ class RegisterLog implements RegisterLogInterface
      */
     protected $scopeConfig;
 
+    /**
+     * RegisterLog constructor
+     *
+     * @param LoggerInterface $logger
+     * @param ScopeConfigInterface $scopeConfig
+     */
     public function __construct(LoggerInterface $logger, ScopeConfigInterface $scopeConfig)
     {
         $this->logger = $logger;
